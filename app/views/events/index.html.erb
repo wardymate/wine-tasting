@@ -1,0 +1,12 @@
+<div>
+  <% if @events.any? %>
+    <% @events.each do |event| %>
+      <%= event.full_date %> 
+    <% end %>
+  <% else %>
+    No events yet
+  <% end %>
+</div>
+<a href="#">
+  Add an event
+</a>
