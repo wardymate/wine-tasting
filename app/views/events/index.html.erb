@@ -1,12 +1,16 @@
 <div>
-  <% if @events.any? %>
-    <% @events.each do |event| %>
-      <%= event.full_date %> 
+  <div class ="table" >
+    <% if @events.any? %>
+      <% @events.each do |event| %>
+        <tr>
+          <td><%= event.full_date %></td>
+          <td><%= event.description %></td>
+          <td><%= event.wines_number %></td>
+        </tr>
+      <% end %>
+    <% else %>
+      <tr>No events yet</tr>
     <% end %>
-  <% else %>
-    No events yet
-  <% end %>
+  </div>
 </div>
-<a href="#">
-  Add an event
-</a>
+<%= link_to "Add an event", new_event_path, class: "btn" %>

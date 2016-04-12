@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'puma'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
@@ -48,4 +50,5 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'launchy'
 end

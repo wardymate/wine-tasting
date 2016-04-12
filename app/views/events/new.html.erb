@@ -1,0 +1,16 @@
+<%= form_for @event do |f| %>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_field :description, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :wines_number, "Number of wines" %>
+    <%= f.select :wines_number, wines_number_select %>
+  </div>
+  <div class="form-group">
+    <%= f.date_select :date %>
+  </div>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
