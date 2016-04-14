@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'puma'
 gem 'devise'
+gem 'omniauth-facebook'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'rails', '4.2.5.1'
@@ -38,6 +39,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
